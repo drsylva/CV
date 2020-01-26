@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html>
 <body>
+  <p style="text-align:center">Please select a seller to process the report.<br/>This window will close automatically within <span id="counter">10</span> second(s).</p>
+<script type="text/javascript">
+
+
+
+function countdown() {
+
+    var i = document.getElementById('counter');
+
+    i.innerHTML = parseInt(i.innerHTML)-1;
+
+if (parseInt(i.innerHTML)<=0) {
+
+ window.close();
+
+}
+
+}
+
+setInterval(function(){ countdown(); },1000);
+
+</script>
 
 <h2>Redirect to a Webpage</h2>
 <p>The replace() method replaces the current document with a new one:</p>
